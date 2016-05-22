@@ -1,0 +1,60 @@
+<ion-view title="Configurar Pesquisa" id="page2">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <div id="configurarPesquisa-markdown6" style="color:#000000;">
+                <p>
+                    <strong>Pesquisa</strong>
+                </p>
+            </div>
+            <ion-item class="range range-positive">Tempo (anos)
+                <input type="range" min="2" max="10" name="rgTempoP" ng-model="ranges.tempoP">
+                <label>{{ranges.tempoP}}</label>
+            </ion-item>
+            <ion-item class="range range-positive">Raio (km)
+                <input type="range" min="1" max="3" name="rgRaioP" ng-model="ranges.raioP">
+                <label>{{ranges.raioP}}</label>
+            </ion-item>
+            <label class="item item-select" name="cbCategoriaP">
+                <span class="input-label">Categoria</span>
+                <select>
+                    <option>Assalto</option>
+                    <option>-Enchente-</option>
+                    <option>-Desastre Natural-</option>
+                </select>
+            </label>
+            <div class="spacer" style="width: 283px; height: 24px;"></div>
+            <div id="configurarPesquisa-markdown7" style="color:#000000;">
+                <p>
+                    <strong>Ao Meu Redor</strong>
+                </p>
+            </div>
+            <ion-item class="range range-positive">Tempo (anos)
+                <input type="range" min="1" max="5" name="rgTempoAMR" ng-model="ranges.tempoAMR">
+                <label>{{ranges.tempoAMR}}</label>
+            </ion-item>
+            
+            <ion-item class="range range-positive">Raio (km)
+                <input type="range" min="1" max="3" name="rgRaioAMR" ng-model="ranges.raioAMR">
+                <label>{{ranges.raioAMR}}</label>
+                
+            </ion-item>
+            <label class="item item-select" name="cbCategoriaAMR">
+                <span class="input-label">Categoria</span>
+                <select>
+                    <option>Assalto</option>
+                    <option>-Enchente-</option>
+                    <option>-Desastre Natural-</option>
+                </select>
+            </label>
+
+            <ion-list>
+                <ion-checkbox ng-model="filter.blue">Desativar Ao Meu Redor</ion-checkbox>
+            </ion-list>
+        
+        <div class="spacer" style="width: 283px; height: 5px;"></div>
+        <div class="text-right">
+            <right><button id="configurarPesquisa-button3" class="button button-medium  button-positive">Salvar</button></right>
+        </div>
+        </form>
+    </ion-content>
+</ion-view>
